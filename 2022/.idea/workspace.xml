@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c9e0c9-73a0-42a1-b0e5-c4afd9fd3dcb" name="变更" comment="" />
+    <list default="true" id="24c9e0c9-73a0-42a1-b0e5-c4afd9fd3dcb" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d0068247-e7aa-458f-8f43-50de6e37df4e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +26,9 @@
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +62,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Go 构建.go build 02.go (1)">
+  <component name="RunManager" selected="Go 构建.go build 2022/src/code">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="2022" />
       <working_directory value="$PROJECT_DIR$" />
@@ -80,14 +89,6 @@
       <filePath value="$PROJECT_DIR$/src/02.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 02.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="2022" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/base/02.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build 03.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="2022" />
       <working_directory value="$PROJECT_DIR$" />
@@ -105,6 +106,15 @@
       <filePath value="$PROJECT_DIR$/src/01.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 2022/src/code" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="2022" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="2022/src/code" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code/04.go" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="2022" />
       <working_directory value="$PROJECT_DIR$" />
@@ -117,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build 2022/src/code" />
         <item itemvalue="Go 构建.go build 02.go (1)" />
         <item itemvalue="Go 构建.go build 2022/src" />
         <item itemvalue="Go 构建.go build 03.go" />
         <item itemvalue="Go 构建.go build 01.go" />
-        <item itemvalue="Go 构建.go build 02.go" />
       </list>
     </recent_temporary>
   </component>
