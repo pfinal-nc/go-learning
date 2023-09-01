@@ -22,29 +22,71 @@ import "fmt"
 //	MakeHungry(c)
 //}
 
-type ZhiFuBao struct {
-	// 支付宝
+// 接口类型变量
+// var x Sayer // 声明一个 Sayer 类型的变量 x
+// a := Cat{}  声明一个Cat类型变量a
+// b := Dog{}  声明一个Dog类型变量b
+// x = a 可以把Cat类型变量直接赋值给x
+// x.Say()
+// x=b 可以把Dog 类型变量直接赋值给x
+// x.Say()
+
+// Mover 值接收者和指针接收者
+// Mover 定义一个接口类型
+//type Mover interface {
+//	Move()
+//}
+//
+//// 值接收者实现接口
+//
+//// Cat 猫结构体类型
+//type Cat struct{}
+//
+//// Move 使用指针接收定义Move方法实现Mover接口
+//func (c *Cat) Move() {
+//	fmt.Println("猫会动")
+//}
+//
+//// 此时实现 Mover 接口是 *Cat 类型, 可以将 *Cat 类型的变量直接复制给 Mover 接口类型的变量x
+//
+//var c1 = &Cat{} // c1是*Cat类型
+//x = c1          // 可以将c1当成Mover类型
+//x.Move()
+
+// 类型与接口的关系
+// 一个类型可以同时实现多个接口, 而接口间彼此独立, 不知道对方的实现。
+
+// Sayer 接口
+type Sayer interface {
+	Say()
 }
 
-// Pay 支付宝的支付方法
-func (z *ZhiFuBao) Pay(amount int64) {
-	fmt.Printf("使用支付宝付款：%.2f元。\n", float64(amount/100))
+// Mover 接口
+type Mover interface {
+	Move()
 }
 
-// Checkout 结账
-func Checkout(obj *ZhiFuBao) {
-	//  支付100
-	obj.Pay(100)
+// Dog 既可以实现 Sayer 接口 也可以实现 Mover 接口
+type Dog struct {
+	Name string
 }
 
-type WeChat struct {
+// Say 实现 Sayer 接口
+func (d Dog) Say() {
+	fmt.Printf("%s会叫汪汪汪\n", d.Name)
 }
 
-// Pay 微信的支付方法
-func (w *WeChat) Pay(amount int64) {
-	fmt.Printf("使用微信付款：%.2f元。\n", float64(amount/100))
+// Move 实现 Mover 接口
+func (d Dog) Move() {
+	fmt.Printf("%s会动\n", d.Name)
 }
 
 func main() {
-	Checkout(&ZhiFuBao{})
+	// 同一个类型实现不同的接口互相不影响使用
+	var d = Dog{Name: "PFinal"}
+
+	var s Sayer = d
+	var m Mover = d
+	s.Say()
+	m.Move()
 }
