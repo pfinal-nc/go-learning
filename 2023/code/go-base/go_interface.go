@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //
 //type Sayer interface {
 //	Say()
@@ -57,36 +55,36 @@ import "fmt"
 // 一个类型可以同时实现多个接口, 而接口间彼此独立, 不知道对方的实现。
 
 // Sayer 接口
-type Sayer interface {
-	Say()
-}
-
-// Mover 接口
-type Mover interface {
-	Move()
-}
-
-// Dog 既可以实现 Sayer 接口 也可以实现 Mover 接口
-type Dog struct {
-	Name string
-}
-
-// Say 实现 Sayer 接口
-func (d Dog) Say() {
-	fmt.Printf("%s会叫汪汪汪\n", d.Name)
-}
-
-// Move 实现 Mover 接口
-func (d Dog) Move() {
-	fmt.Printf("%s会动\n", d.Name)
-}
-
-func main() {
-	// 同一个类型实现不同的接口互相不影响使用
-	var d = Dog{Name: "PFinal"}
-
-	var s Sayer = d
-	var m Mover = d
-	s.Say()
-	m.Move()
-}
+//type Sayer interface {
+//	Say()
+//}
+//
+//// Mover 接口
+//type Mover interface {
+//	Move()
+//}
+//
+//// Dog 既可以实现 Sayer 接口 也可以实现 Mover 接口
+//type Dog struct {
+//	Name string
+//}
+//
+//// Say 实现 Sayer 接口
+//func (d Dog) Say() {
+//	fmt.Printf("%s会叫汪汪汪\n", d.Name)
+//}
+//
+//// Move 实现 Mover 接口
+//func (d Dog) Move() {
+//	fmt.Printf("%s会动\n", d.Name)
+//}
+//
+//func main() {
+//	// 同一个类型实现不同的接口互相不影响使用
+//	var d = Dog{Name: "PFinal"}
+//
+//	var s Sayer = d
+//	var m Mover = d
+//	s.Say()
+//	m.Move()
+//}
