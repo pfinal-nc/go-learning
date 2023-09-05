@@ -83,3 +83,5 @@ func main() {
 	a()
 	fmt.Println("normally returned from main")
 }
+
+// 在上面的程序中 函数 b() 在发生 panic 函数 a()调用了一个延迟函数 recovery() 用于恢复 panic 函数 b() 作为一个不同的协程来调用, 下一行的Sleep 只是保证 a() 在b () 运行结束之后才退出
