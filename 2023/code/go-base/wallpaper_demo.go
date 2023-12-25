@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"github.com/reujab/wallpaper"
-)
-
 /**
  * @Author: PFinal南丞
  * @Author: lampxiezi@163.com
@@ -30,9 +25,9 @@ func main() {
 	//	fmt.Println(err)
 	//	panic(err)
 	//}
-	cacheDir, err := wallpaper.GetCacheDir()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(cacheDir)
+	//var cacheDir, err = wallpaper.GetCacheDir()
+	//if err != nil {
+	//	panic(err)
+	//}
+	//fmt.Println(cacheDir)
 }

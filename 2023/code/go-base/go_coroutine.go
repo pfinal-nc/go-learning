@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"runtime/pprof"
 	"time"
 )
 
@@ -22,6 +24,8 @@ func alphabets() {
 }
 
 func main() {
+	_ = pprof.StartCPUProfile(os.Stdout)
+	defer pprof.StopCPUProfile()
 	go numbers()
 	go alphabets()
 	time.Sleep(3000 * time.Millisecond)
