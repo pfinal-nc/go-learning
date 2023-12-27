@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"runtime"
 	"sync/atomic"
+	"time"
 )
 
 /**
@@ -24,5 +26,7 @@ func main() {
 			}
 		}()
 	}
-
+	time.Sleep(time.Second)
+	opsFinal := atomic.LoadUint64(&ops)
+	fmt.Println("ops:", opsFinal)
 }
