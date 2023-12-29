@@ -23,4 +23,5 @@ func main() {
 	fmt.Println(r.FindStringSubmatch("pfinalclub")) // Submatch 返回完全匹配和局部匹配的字符串
 	fmt.Println(r.FindStringSubmatchIndex("pfinalclub"))
 	fmt.Println(r.FindAllString("pfinalclub", -1))
+
 }
