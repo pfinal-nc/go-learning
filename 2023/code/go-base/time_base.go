@@ -19,6 +19,12 @@ func main() {
 	_, _ = p(now)
 	then := time.Date(2023, 1, 1, 0, 0, 0, 0, time.UTC)
 	_, _ = p(then)
-	p(then.Year())
-	p(then.Month())
+	_, _ = p(then.Year())
+	_, _ = p(then.Month())
+	_, _ = p(then.Before(now))
+	// 时间戳
+	fmt.Println(time.Now().Unix())
+	fmt.Println(time.Now().UnixNano())
+	fmt.Println(time.Now().UnixNano() / 1000000)
+	fmt.Println(time.Unix(time.Now().Unix(), 0))
 }
